@@ -1,0 +1,182 @@
+<div class="row">
+  <div class="col-lg-1 col-md-1 col-2 mt-5">
+    <div class="bootstrap-demo conts1">
+      <div class="btn-group-vertical">
+        <button type="button" class="btn btn-primary bb">A</button>
+        <button type="button" class="btn btn-primary bb">B</button>
+        <button type="button" class="btn btn-primary bb">C</button>
+        <button type="button" class="btn btn-primary bb">D</button>
+        <button type="button" class="btn btn-primary bb">E</button>
+        <button type="button" class="btn btn-primary bb">F</button>
+        <button type="button" class="btn btn-primary bb">G</button>
+        <button type="button" class="btn btn-primary bb">H</button>
+        <button type="button" class="btn btn-primary bb">I</button>
+        <button type="button" class="btn btn-primary bb">J</button>
+        <button type="button" class="btn btn-primary bb">K</button>
+        <button type="button" class="btn btn-primary bb">L</button>
+        <button type="button" class="btn btn-primary bb">M</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-10 col-md-10 col-8">
+    <div class="flex-grid-thirds mt-5">
+      <div class="row">
+        <div *ngFor="let skillshave of skillshaves; let i = index" class="col-lg-4 col-md-4 col-12 p-1">
+          <mat-accordion>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  {{skillshave.cat_name}}
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <!-- <section>
+                  <div class="row p-1">
+                    <mat-checkbox class="col-lg-7 col-md-7 col-7">Bensignor TMAP</mat-checkbox>
+                    <select class="col-lg-5 col-md-5 col-5">
+                      <option>Basic</option>
+                      <option>Good</option>
+                      <option>Expert</option>
+                    </select><br>
+                  </div>
+                  <div class="row p-1">
+                    <mat-checkbox class="col-lg-7 col-md-7 col-7">De Mark</mat-checkbox>
+                    <select class="col-lg-5 col-md-5 col-5">
+                      <option>Basic</option>
+                      <option>Good</option>
+                      <option>Expert</option>
+                    </select><br>
+                  </div>
+                  <div class="row p-1">
+                    <mat-checkbox class="col-lg-7 col-md-7 col-7">Elloitt Mark</mat-checkbox>
+                    <select class="col-lg-5 col-md-5 col-5">
+                      <option>Basic</option>
+                      <option>Good</option>
+                      <option>Expert</option>
+                    </select><br>
+                  </div>
+                  <div class="row p-1">
+                    <mat-checkbox class="col-lg-7 col-md-7 col-7">Market Profile</mat-checkbox>
+                    <select class="col-lg-5 col-md-5 col-5">
+                      <option>Basic</option>
+                      <option>Good</option>
+                      <option>Expert</option>
+                    </select><br>
+                  </div>
+                </section> -->
+            </mat-expansion-panel>
+          </mat-accordion>
+        </div>
+        <!-- <div class="col-lg-4 col-md-4 col-12">
+            <mat-accordion>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Country Knowledge
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <section>                  <div class="row p-1">
+                    <mat-checkbox class="col-lg-7 col-md-7 col-7">Algeria</mat-checkbox>
+                    <select class="col-lg-5 col-md-5 col-5">
+                      <option>Basic</option>
+                      <option>Good</option>
+                      <option>Expert</option>
+                    </select><br>
+                  </div>
+                  <div class="row p-1">
+                    <mat-checkbox class="col-lg-7 col-md-7 col-7">Australia</mat-checkbox>
+                    <select class="col-lg-5 col-md-5 col-5">
+                      <option>Basic</option>
+                      <option>Good</option>
+                      <option>Expert</option>
+                    </select><br>
+                  </div>
+                  <div class="row p-1">
+                    <mat-checkbox class="col-lg-7 col-md-7 col-7">Brazil</mat-checkbox>
+                    <select class="col-lg-5 col-md-5 col-5">
+                      <option>Basic</option>
+                      <option>Good</option>
+                      <option>Expert</option>
+                    </select><br>
+                  </div>
+                  <div class="row p-1">
+                    <mat-checkbox class="col-lg-7 col-md-7 col-7">ecuador</mat-checkbox>
+                    <select class="col-lg-5 col-md-5 col-5">
+                      <option>Basic</option>
+                      <option>Good</option>
+                      <option>Expert</option>
+                    </select><br>
+                  </div>
+                </section>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <mat-accordion>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Cooking
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+              <section>
+                  <div class="row p-1">
+                    <mat-checkbox class="col-lg-7 col-md-7 col-7">Baking</mat-checkbox>
+                    <select class="col-lg-5 col-md-5 col-5">
+                      <option>Basic</option>
+                      <option>Good</option>
+                      <option>Expert</option>
+                    </select><br>
+                  </div>
+                  <div class="row p-1">
+                    <mat-checkbox class="col-lg-7 col-md-7 col-7">French Cuisine</mat-checkbox>
+                    <select class="col-lg-5 col-md-5 col-5">
+                      <option>Basic</option>
+                      <option>Good</option>
+                      <option>Expert</option>
+                    </select><br>
+                  </div>
+                  <div class="row p-1">
+                    <mat-checkbox class="col-lg-7 col-md-7 col-7">Indian Cuisine</mat-checkbox>
+                    <select class="col-lg-5 col-md-5 col-5">
+                      <option>Basic</option>
+                      <option>Good</option>
+                      <option>Expert</option>
+                    </select><br>
+                  </div>
+                  <div class="row p-1">
+                    <mat-checkbox class="col-lg-7 col-md-7 col-7">Italian Cuisine</mat-checkbox>
+                    <select class="col-lg-5 col-md-5 col-5">
+                      <option>Basic</option>
+                      <option>Good</option>
+                      <option>Expert</option>
+                    </select><br>
+                  </div>
+                </section>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-1 col-md-1 col-2 mt-5">
+    <div class="bootstrap-demo constant">
+      <div class="btn-group-vertical">
+        <button type="button" class="btn btn-primary bb">N</button>
+        <button type="button" class="btn btn-primary bb">O</button>
+        <button type="button" class="btn btn-primary bb">P</button>
+        <button type="button" class="btn btn-primary bb">Q</button>
+        <button type="button" class="btn btn-primary bb">R</button>
+        <button type="button" class="btn btn-primary bb">S</button>
+        <button type="button" class="btn btn-primary bb">T</button>
+        <button type="button" class="btn btn-primary bb">U</button>
+        <button type="button" class="btn btn-primary bb">V</button>
+        <button type="button" class="btn btn-primary bb">W</button>
+        <button type="button" class="btn btn-primary bb">X</button>
+        <button type="button" class="btn btn-primary bb">Y</button>
+        <button type="button" class="btn btn-primary bb">Z</button>
+      </div>
+    </div>
+  </div>
+</div>
